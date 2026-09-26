@@ -11,5 +11,3 @@ Vous pouver trouver les le tutoriel pour l'assebler dans les pieces en stl et il
 Vous pouver trouver le code et le tutoriel du code and "Le code", et il s'appelle;
 
 • Le turoriel du code
-
-test
