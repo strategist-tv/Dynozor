@@ -1,0 +1,21 @@
+# ESP-IDF Partition Table
+# Name,   Type, SubType, Offset,  Size, Flags
+nvs,         data, nvs,      0x9000,    0x4000,
+otadata,     data, ota,      0xD000,    0x2000,
+phy_init,    data, phy,      0xF000,    0x1000,
+factory,     app,  factory,  0x10000,   0x100000,
+ota_0,       app,  ota_0,    0x110000,  0x280000,
+ota_1,       app,  ota_1,    0x390000,  0x280000,
+nvs_key,     data, nvs_keys, 0x610000,  0x1000,
+nvs_cert,    data, 0x41,     0x611000,  0x4000,
+nvs_log,     data, 0x40,     0x615000,  0x20000,
+storage,     data, spiffs,   0x635000,  0x1CB000,
+
+
+# nvsdata  - # Non-Volatile Storage (NVS) API. Minimum 0x3000 bytes
+# otadata  - # Always 0x2000 in size
+# phy_init - # Storing PHY initialisation data
+# nvs_key  - # Store NVS Keys (minimum 0x1000 bytes)
+# nvs_log  - # Custom format to store log data
+# key size: 4096
+# Log size: 57344 bytes
